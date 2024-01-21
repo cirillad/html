@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        body 
+        {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            color: black;
+        }
+        .block1, .block2, .block3
+        {
+            width: 100%;
+            height: 33.33%;
+            display: flex;
+            justify-content: space-between;
+            transition: background-color 0.3s, filter 1s;
+        }
+        .text1
+        {
+            margin: auto;
+            text-transform: uppercase;
+        }
+        .img-container
+        {
+            position: relative;
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+        }
+        .img-container img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s;
+        }
+        .block1:hover, .block2:hover, .block3:hover
+        {
+            background-color: lightgrey;
+            filter: grayscale(100%);
+        }
+        .block1:hover .img-container img, .block2:hover .img-container img, .block3:hover .img-container img
+        {
+            background-color: lightgrey;
+            filter: grayscale(100%);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <div class="text1">HELLO, WORLD!</div>
+        <div class="img-container"><img src="./img/blurred-valentine-s-day-wallpaper_23-2148819570.avif" alt=""></div>
+    </div>
+    <div class="block2">
+        <div class="img-container"><img src="./img/blurred-valentine-s-day-wallpaper_23-2148819570.avif" alt=""></div>
+        <div class="text1">HELLO, WORLD!</div>  
+    </div>
+    <div class="block3">
+        <div class="text1">HELLO, WORLD!</div>
+        <div class="img-container"><img src="./img/blurred-valentine-s-day-wallpaper_23-2148819570.avif" alt=""></div>
+    </div>
+</body>
+</html>
+

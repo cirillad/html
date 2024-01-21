@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myMove {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .circle {
+            border: 2px solid #007a7a;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .backgcircle {
+            border: 1px solid #007a7a;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: #007a7a;
+            left: 50%;
+            top: 0;
+            margin-top: 195px;
+            margin-right: 5px;
+        }
+
+        .minute-hand, .second-hand {
+            position: absolute;
+            background-color: #007a7a;
+            transform-origin: 50% 100%;
+            left: 50%;
+            top: 50%;
+            animation: myMove 60s linear infinite;
+        }
+
+        .minute-hand {
+            width: 3px;
+            height: 120px;
+            margin-top: -120px;
+            z-index: 1;
+            animation: myMove 720s linear infinite;
+        }
+
+        .second-hand {
+            width: 3px;
+            height: 140px;
+            margin-top: -140px;
+            z-index: 0;
+            animation: myMove 60s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="circle">
+            <div class="backgcircle"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
