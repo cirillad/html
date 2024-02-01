@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 97%;
+            height: auto;
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Рівномірно розміщує елементи в контейнері */
+        }
+        .img-container {
+            border: 1px solid black;
+            position: relative;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .progress-container {
+            border: 1px solid lightgrey;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            flex-grow: 1; /* Розтягує прогрес контейнер на залишок вільного простору */
+        }
+        .uploading-container {
+            background-color: rgb(165, 190, 199);
+            width: 40%;
+            overflow: hidden;
+            font-size: 13px;
+            align-items: flex-start;
+            padding-top: 7.5px;
+            padding-bottom: 7.5px;
+            text-align: left;
+        }
+        .uploading-bar {
+            overflow: auto;
+            align-items: flex-end;
+            font-size: 13px;
+            text-align: right;
+            margin-left: auto; /* Прикріплює "uploading-bar" справа прогрес контейнера */
+        }
+        .data-container {
+            align-items: center;
+            margin: 10px;
+        }
+        .button-container {
+            margin: 10px;
+            min-width: 10%;
+        }
+        button {
+            background-color: royalblue;
+            color: white;
+            padding: 5px 10px;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Змінюємо напрямок на вертикальний */
+            }
+
+            .img-container,
+            .data-container,
+            .button-container {
+                width: 100%; /* Розтягуємо всі контейнери на весь екран */
+            }
+
+            .button-container {
+                margin-top: 10px; /* Додаємо відступ зверху кнопці */
+                margin-left: 0; /* Скидаємо відступ зліва для кнопки */
+            }
+
+            .progress-container {
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="./images/grunhidos-porcos-capa.jpg" alt="loading">
+        </div>
+        <div class="data-container">
+            <div class="progress-container">
+                <div class="uploading-container">
+                    <span style="margin-left: 10px;">UPLOADING 40%</span>
+                </div>
+                <div class="uploading-bar">
+                    <span style="margin-right: 10px;">About 23 minutes remaining</span>
+                </div>
+            </div>
+            <div class="title-container">
+                <h3>Title of video</h3>
+            </div>
+            <div class="info-container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, architecto?</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>Done</button>
+        </div>
+    </div>
+</body>
+</html>
