@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header{
+    width: 100%;
+    height: 100px;
+
+    border-bottom:2px solid #b4b4b4 ;
+}
+.container{
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 50px;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.Logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.text-logo-mail{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.myMail{
+    display: flex;
+    align-items: center;
+ 
+}   
+.text-my-mail{
+    margin-right: 10px;
+    font-weight: 500;
+  
+}
+.myLogoProfile{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.menu{
+    width: 300px;
+    height: 300px;
+    display: flex;
+
+    flex-direction: column;
+
+    
+   
+}
+
+.menu div{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.menu div:hover{
+    background-color: rgba(247, 172, 172, 0.646);
+    cursor: pointer;
+}
+
+.menu div span{
+    margin-top: 3px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.mail{
+    width: 85%;
+    margin-left: 30px;
+}
+
+.mail-block{
+    
+    width: 100%;
+    height: 55px;
+    display: flex;
+  
+  
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #cecece9c;
+}
+
+.mail .mail-block img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.name-mail{
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 100;
+    width: 230px;
+   
+}
+.name-content{
+    width: 76%;
+    color: black;
+    margin-right: 5px;
+}
+.content{
+    
+    color: #b4b4b4;
+}
+
+
+.data{
+    width: 80px;
+}
+
+.block-start{
+    display: flex;
+    align-items: center;
+
+  
+}
+
+@media screen and (max-width: 800px){
+  
+    
+.block-start{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  
+}
+.main-block{
+    position: relative;
+}
+.mail-block .fixet-block {
+    position: relative;
+    top: -63px;
+    left: 200px;
+
+}
+.name-content{
+    width: 120%;
+}
+.data{
+    position: relative;
+    top: -79px;
+    left: 250px;
+}
+.content{
+    display: block;
+    width: 100%;
+}
+
+.mail-block {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-bottom: 2px solid #cecece9c;
+    flex-direction: column;
+    height: 125px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 550px){
+        .menu span{
+            display: none;
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Logo">
+                <img src="./mail.png" alt="logo">
+                <span class="text-logo-mail">my mail</span>
+            </div>
+            <div class="myMail">
+                <span class="text-my-mail">user@mymail.com</span>
+                <img class="myLogoProfile" src="./account.png alt=">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="menu">
+                <div>
+                    <img src="./incom.png" alt="menu1">
+                    <span>Incoming</span>
+                </div>
+                <div>
+                    <img src="./outcom.png" alt="menu2">
+                    <span>Outgoing</span>
+                </div>
+                <div>
+                    <img src="./draft.png" alt="menu3">
+                    <span>Drafts</span>
+                </div>
+                <div>
+                    <img src="./spam.png" alt="menu4">
+                    <span>Spam</span>
+                </div>
+            </div>
+            <div class="mail">
+                <div class="mail-block">
+                    <div class="block-start">
+                        <img src="./star1.svg" alt="">
+                        <h3 class="name-mail">me,Alex</h3>
+                    </div>
+                    
+                    <span class="name-content">Trip to South America <span class="content">- Lorem ipsum dolor sit amet...</span></span> 
+                    
+                    <img class="fixet-block" src="./attach_26.png" alt="">
+                    <span class="data">12 apr.</span>
+
+                </div>
+                <div class="mail-block">
+                    <div class="block-start">
+                        <img src="./star1.svg" alt="">
+                        <h3 class="name-mail">me,John</h3>
+                    </div>
+                    <span class="name-content">Santa Monica trip <span class="content"> - Lorem ipsum dolor sit amet consectetur...</span></span>
+                    
+                    <img class="fixet-block" src="./attach_26.png" alt="">
+                    <span class="data">12 apr.</span>
+                </div>
+                <div class="mail-block">
+                    <div class="block-start">
+                        <img src="./star1.svg" alt="">
+                        <h3 class="name-mail">me,John,Alex</h3>
+                    </div>
+                    <span class="name-content">Birthday party <span class="content"> - 20.04.2019</span></span>
+                    <img class="fixet-block" src="#" alt="">
+                    <span class="data">11 apr.</span>
+                </div>
+                <div class="mail-block">
+                    <div class="block-start">
+                        <img src="./star2.svg" alt="">
+                        <h3 class="name-mail">Mari White</h3>
+                    </div>
+                    <span class="name-content">Report (march 2019) </span>
+                    <img class="fixet-block" src="./attach_26.png" alt="">
+                    <span class="data">10 apr.</span>
+                   
+                </div>
+                <div class="mail-block">
+                    <div class="block-start">
+                        <img src="./star1.svg" alt="">
+                        <h3 class="name-mail">me,Elena</h3>
+                    </div>
+                    <span class="name-content">Duis semper augue <span class="content">- Lorem sit dolor sit amet </span></span> 
+                  
+                    <img class="fixet-block" src="./attach_26.png" alt="">
+                    <span class="data">5 apr.</span>
+                </div>
+                <div class="mail-block">
+                    <div class="block-start">
+                       
+                        <img src="./star1.svg" alt="">
+                        <h3 class="name-mail">Bill,John</h3>
+                    </div>
+                    <span class="name-content">Ut congue purus </span>
+                    <img class="fixet-block" src="#" alt="">
+                    <span class="data">12 apr.</span>
+                </div>
+                <div class="mail-block">
+                    <div class="block-start">
+                        <img src="./star2.svg" alt="">
+                        <h3 class="name-mail">Stive</h3>
+                    </div>   
+                    <span class="name-content">Phasellus quis velit </span>
+                    <img class="fixet-block" src="#" alt="">
+                    <span class="data">1 apr.</span>
+ 
+                </div>
+                <div class="mail-block">
+                    <div class="block-start">
+                        <img src="./star2.svg" alt="">
+                        <h3 class="name-mail">Mari White</h3>
+                    </div>
+                    <span class="name-content">Report (february 2019)</span>
+                    <img class="fixet-block" src="./attach_26.png" alt="">
+                    <span class="data">10 apr.</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

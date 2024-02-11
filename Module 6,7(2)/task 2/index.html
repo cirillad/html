@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+        img
+        {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .block
+        {
+            padding: 20px;
+            padding-bottom: 80px;
+        }
+        .block:last-child 
+        {
+            margin-top: 50px;
+        }
+        .h1A, .h1B
+        {
+            background-color:rgb(40, 92, 145) ;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin: 0;
+            padding: 20px;
+            color: aliceblue;
+        }
+        @media screen and (max-width:1920px)
+        {
+            .main 
+            {
+                display: grid;
+                grid-template-columns: 65% 35%;
+                width: 95%;
+                height: auto;
+            }
+            .text2
+            {
+                position: absolute;
+                top: 225px;
+                padding-left: 30px;
+                left: 0;
+                width: 60.5%;
+                height: auto;
+            }
+        }
+        @media screen and (max-width:800px)
+        {
+            .main
+            {
+                display: inline-block;
+            }
+            .text2
+            {
+                position: absolute;
+                top: unset;
+                padding-left: 30px;
+                left: 0;
+                height: auto;
+                width:unset
+            }
+            .main-block
+            {
+                display: flex;
+                flex-direction: row;
+                
+            }
+        }
+        @media screen and (max-width:600px)
+        {
+            .main
+            {
+                display: inline-block;
+            }
+            .text2
+            {
+                position: absolute;
+                top: unset;
+                padding-left: 30px;
+                left: 0;
+                height: auto;
+                width:unset
+            }
+            .main-block
+            {
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+    </style>
+</head>
+<body class="main">
+    <div>
+        <p><b>Cat</b></p>
+        <div>The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family. The cat is either a house cat, kept as a pet, or a feral cat, freely ranging and avoiding human contact.[5] A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.</div>
+    </div>
+    <div class="main-block">
+        <div class="block">
+            <img src="./images/cat1.jpg" alt="">
+            <h1 class="h1A">Actions</h1>
+        </div>
+        <div class="block">
+            <img src="./images/cat2.jpg" alt="">
+            <h1 class="h1B">Plass</h1>
+        </div>
+    </div>
+    <div class="text2">
+        <p>Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. They are predators who are most active at dawn and dusk (crepuscular). Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. Compared to humans, they see better in the dark (they see in near total darkness) and have a better sense of smell, but poorer color vision. Cats, despite being solitary hunters, are a social species. Cat communication includes the use of vocalizations including mewing, purring, trilling, hissing, growling and grunting as well as cat-specific body language.[7] Cats also communicate by secreting and perceiving pheromones.</p>
+        <p>Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two to five kittens. Domestic cats can be bred and shown as registered pedigreed cats, a hobby known as cat fancy. Failure to control the breeding of pet cats by spaying and neutering, as well as abandonment of pets, has resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird species, and evoking population control.</p>
+    </div>
+</body>
+</html>
