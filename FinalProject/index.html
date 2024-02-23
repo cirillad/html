@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="./icons/free-icon-frog-235392.png">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Open Sans',sans-serif;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background-color: lightgray;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-block {
+            background-color: rgb(231, 231, 231);
+            width: 832px;
+            height: 1040px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+
+        .main-block > div {
+            width: 416px;
+            height: 520px;
+            display: flex;
+            color: aliceblue;
+        }
+
+        .main-block > div.bottom-right-block {
+            width: 416px;
+            height: 520px;
+            display: grid;
+            color: aliceblue;
+        }
+
+        .top-left-block {
+            display: flex;
+            justify-content: center;
+        }
+
+        .top-right-block {
+            background-color: rgb(255, 80, 80);
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bottom-left-block {
+            background-color: rgb(255, 80, 80);
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+.bottom-right-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Додаємо два рядки */
+}
+
+
+        img {
+            width: 90%;
+            height: 70%;
+            display: block;
+            margin: auto;
+        }
+
+        footer {
+            background-color: rgb(53, 53, 53);
+            height: 140px;
+            color: aliceblue;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        .h1 {
+            font-size: 3.5rem; 
+            font-weight: bolder;
+        }
+
+        @media (max-width: 840px) {
+            .main-block {
+                width: 416px;
+                height: 2080px;
+            }
+        }
+        .discription-text {
+            margin-top: 30px;
+        }
+        .mini-block {
+            width: 208px;
+            height: 260px;
+        }
+        .text1 {
+            text-align: center;
+            color: gray;
+            font-weight: bold;
+            font-size: large;
+            margin-top: 60px;
+        }
+        
+        .text2 {
+            text-align: center;
+            color: rgb(255, 80, 80);
+            font-weight: bolder;
+            font-size: 60px;
+            margin-top: 40px;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .icons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-size:xx-large; font-family:monospace;"><b>My Portfolio</b></div>
+    </header>
+    <main>
+        <div class="main-block">
+            <div class="top-left-block"><img src="./images/pngwing.com.png" alt=""></div>
+            <div class="top-right-block">
+                <div style="margin: 40px;">
+                    <div class="h1">Вітання!</div>
+                    <p style="font-size: 1.6rem; margin: 20px 20px 0 0;">Я креативний мультиталановитий графічний дизайнер</p>
+                    <p style="line-height: 2; margin: 20px 0 0;">Я творчий графічний дизайнер. Я експерт в Adobe Creative Suit і працював з багатьма різними клієнтами. Поєднання ваших ідей зі сприйняттям клієнтів і всіма цифровими точками між ними...</p>
+                    <div class="icons-container">
+                        <a href="https://www.instagram.com/c1rillad/?next=%2F"><img class="icon" src="./icons/instagram_1419647.png" alt=""></a>
+                        <a href="https://t.me/cirillad"><img class="icon" src="./icons/telegram_3536705.png" alt=""></a>
+                        <a href="https://github.com/cirillad?tab=repositories"><img class="icon" src="./icons/github_3291695.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-left-block">
+                <p class="h1" style="font-size: 2rem;">Подробиці</p>
+                <div>
+                    <div class="discription-text" style="margin: unset;">
+                        <p style="font-weight: bold;">ІМ'Я</p>
+                        <p>Гліб Бурба</p>
+                    </div>
+                    <div class="discription-text">
+                        <p style="font-weight: bold;">РОЛЬ</p>
+                        <p>Провідний дизайнер</p>
+                    </div>
+                    <div class="discription-text">
+                        <p style="font-weight: bold;">ЕЛ. АДРЕСА</p>
+                        <p id="email" style="text-decoration-line: underline ; cursor: pointer;">Burba_ny38@student.itstep.org</p>
+                    </div>
+                    <div class="discription-text">
+                        <p style="font-weight: bold;">ТЕЛЕФОН</p>
+                        <p id="phone" style="text-decoration-line: underline; cursor: pointer;">(+380) 973 326 247</p>
+                    </div>
+                    <div class="discription-text">
+                        <p style="font-weight: bold;">ВЕБ-САЙТ</p>
+                        <p>www.somewebsite.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-right-block">
+                <div class="mini-block">
+                    <div class="text1">НАГОРОДИ</div>
+                    <div class="text2">10</div>
+                </div>
+                <div class="mini-block">
+                    <div class="text1">РОКІВ ДОСВІДУ</div>
+                    <div class="text2">10+</div>
+                </div>
+                <div class="mini-block">
+                    <div class="text1">КЛІЄНТИ</div>
+                    <div class="text2">150</div>
+                </div>
+                <div class="mini-block">
+                    <div class="text1">ПРОЕКТИ</div>
+                    <div class="text2">346</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div> &copy; 2023 My Portfolio</div>
+        <div>< < < < < < < < <  Made for itstep  > > > > > > > > > ></div>
+    </footer>
+
+    <!-- Підключення JavaScript для обробки подій на іконках -->
+    <script>
+        const icons = document.querySelectorAll('.icon');
+
+        icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                const link = icon.parentElement.getAttribute('href');
+                window.location.href = link;
+            });
+        });
+
+        const emailElement = document.getElementById('email');
+        const phoneElement = document.getElementById('phone');
+
+        emailElement.addEventListener('click', () => {
+            const emailText = emailElement.innerText;
+            navigator.clipboard.writeText(emailText)
+                .then(() => {
+                    console.log('Email copied: ' + emailText);
+                    alert('Email copied: ' + emailText);
+                })
+                .catch(err => {
+                    console.error('Failed to copy email: ', err);
+                    alert('Failed to copy email. Please try again.');
+                });
+        });
+
+        phoneElement.addEventListener('click', () => {
+            const phoneText = phoneElement.innerText;
+            navigator.clipboard.writeText(phoneText)
+                .then(() => {
+                    console.log('Phone number copied: ' + phoneText);
+                    alert('Phone number copied: ' + phoneText);
+                })
+                .catch(err => {
+                    console.error('Failed to copy phone number: ', err);
+                    alert('Failed to copy phone number. Please try again.');
+                });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const miniBlocks = document.querySelectorAll('.mini-block .text2');
+
+        miniBlocks.forEach(miniBlock => {
+            let currentValue = 0;
+            const targetValue = parseInt(miniBlock.innerText);
+            const increment = Math.ceil(targetValue / 200); // Зменшуємо крок збільшення значення
+
+            const interval = setInterval(function() {
+                currentValue += increment;
+                if (currentValue >= targetValue) {
+                    currentValue = targetValue;
+                    clearInterval(interval);
+                }
+                miniBlock.innerText = currentValue;
+            }, 50); // Збільшуємо інтервал оновлення (50 мс)
+        });
+    });
+    </script>
+</body>
+</html>
