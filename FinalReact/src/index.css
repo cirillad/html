@@ -1,0 +1,16 @@
+.btn {
+    background-color: #f44336 !important;
+    border-color: #f44336 !important;
+    color: white !important;
+  }
+
+  .btn-custom-red {
+    background-color: #f44336 !important;
+    border-color: #f44336 !important;
+    color: white !important;
+  }
+
+  body {
+    background: url("https://cdn.vectorstock.com/i/500p/84/65/abstract-white-monochrome-background-vector-32028465.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }

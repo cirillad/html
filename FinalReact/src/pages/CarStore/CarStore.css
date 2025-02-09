@@ -1,0 +1,99 @@
+.container {
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .car-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px; /* Можна налаштувати відступ від пагінації */
+  }
+  
+  .car-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  h5 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Pagination styles */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .pagination {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .page-item.disabled .page-link {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #ffffffc6;
+    color: rgb(0, 0, 0);
+  }
+  
+  .page-link:hover {
+    background-color: #ffffffc6;
+    color: rgb(0, 0, 0);
+  }
+  

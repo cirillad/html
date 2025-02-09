@@ -1,0 +1,9 @@
+/* В App.css */
+body {
+    background-image: url('https://cdn.vectorstock.com/i/500p/84/65/abstract-white-monochrome-background-vector-32028465.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Встановлюємо мінімальну висоту на всю висоту екрану */
+    margin: 0; /* Вимикаємо відступи по краях */
+  }
+  
